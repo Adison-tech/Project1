@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Register page</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">WEBSITE</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </nav>
+        <div class="menu_icon">
+          <img src="menu.svg">
+       
+    
+        <div class="dropdown_menu">
+            <li><a href="/">Home</a></li>
+          <li><a href="/login">Login</a></li>
+        </div>
+      </header>
+    <div class="wrapper">
+        <form action="/register" method="post">
+            <h2>Register</h2>
+            <div class="input-box">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" autocomplete="off" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" autocomplete="off" placeholder="Password" required>
+            </div><br>
+            <button class="btn" type="submit">Register</button>
+            <div class="links">
+                <p>Already have an account? <a href="/login">Login here</a></p>
+            </div>
+    </form>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.wrapper {
+    width: 380px;
+    height: 400px;
+    background: #8778ff;
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.input-box label {
+    font-size: 13px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50%;
+    background: grey;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 11px;
+    padding: 15px 30px 15px 15px;
+}
+
+.input-box input::placeholder {
+    color: #000;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember-forgot label input {
+    accent-color: blue;
+}
+
+.remember-forgot a {
+    color: blue;
+    text-decoration: none;
+    /*font-weight: 600;*/
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 500;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 30px;
+    background: #e8dcdc;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.wrapper .btn:hover {
+    background: blue;
+}
+
+.wrapper .links {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.wrapper .links p a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.wrapper .links a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.form {
+    width: 380px;
+    height: 420px;
+    top: 1000px;
+    background: #8778ff;
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.form h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.form-input label {
+    font-size: 13px;
+}
+
+.form-input input {
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 11px;
+    padding: 15px 30px 15px 15px;
+}
+
+.form-input input::placeholder {
+    color: #000;
+}
+
+.form .btn {
+    width: 100%;
+    height: 30px;
+    background: #e8dcdc;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.form .btn:hover {
+    background: blue;
+}
+
+
+
+.reset {
+    width: 350px;
+    height: 250px;
+    background: #8778ff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.reset h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.reset-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.reset-box label {
+    font-size: 13px;
+}
+
+.reset-box input {
+    width: 100%;
+    height: 40%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 11px;
+    padding: 15px 30px 15px 15px;
+}
+
+.reset-box input::placeholder {
+    color: #000;
+}
+
+.reset .btn {
+    width: 60%;
+    height: 30px;
+    background: #e8dcdc;
+    margin: 0 50px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.reset .btn:hover {
+    background: blue;
+}
+
+.search {
+    margin: 20px;
+    width: 350px;
+    height: 200px;
+    background: #8778ff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.search h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.search .search-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 25px 0;
+}
+
+.search-box label {
+    font-size: 13px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 11px;
+    padding: 10px 20px 10px 10px;
+}
+
+.input-box input::placeholder {
+    color: #000;
+}
+
+.search .btn2 {
+    width: 50%;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+    margin-left: 25%;
+}
+
+.search .btn2:hover {
+    background: blue;
+}
+
+.forgot {
+    width: 350px;
+    height: 200px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.forgot p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.forgot-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.forgot-box label {
+    font-size: 13px;
+}
+
+.forgot-box input {
+    width: 100%;
+    height: 40%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #000;
+    font-size: 11px;
+    padding: 15px 30px 15px 15px;
+}
+
+.forgot-box input::placeholder {
+    color: #000;
+}
+
+.forgot .btn {
+    width: 50%;
+    height: 30px;
+    background: #fff;
+    margin: 0 60px;
+    /*margin-top: 10px;*/
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.forgot .btn:hover {
+    background: green;
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 5px;
+    margin-left: 1px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+}
+
+
+.menu_icon img{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    
+}
+nav a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 60px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    border-bottom: 4px solid blue;
+}
+
+
+section img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 75px;
+    width: 200px;
+    height: 0;
+    font-size: 13px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: auto;
+}
+
+.dropdown_menu li {
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 811px) {
+    nav {
+        display: none;
+    }
+
+    .menu_icon img{
+        width: 25px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .dropdown_menu {
+        left: 1rem;
+        right: 1rem;
+        width: unset;
+    }
+
+    .dropdown_menu li a {
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+
+    .dropdown_menu a:hover {
+        font-weight: 500;
+        border-bottom: 4px solid blue;
+    }
+
+}

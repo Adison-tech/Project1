@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact page</title>
+</head>
+<body>
+    <header>
+    <a href="/" class="logo">WEBSITE</a>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+    <div class="menu_icon">
+      <img src="menu.svg">
+   
+
+    <div class="dropdown_menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </div>
+  </header>
+    <div class="form">
+        <form action="/contact" method="post">
+            <h2>Contact Details</h2>
+            <div class="form-input">
+                <label for="mobile">Mobile:</label><br>
+                <input type="tel" id="mobile" name="mobile" autocomplete="off" placeholder="Mobile number" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" autocomplete="off" placeholder="Email" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="address">Address:</label><br>
+                <input type="address" id="address" name="address" autocomplete="off" placeholder="Address" required><br><br>
+            </div>
+            <div class="form-input">
+                <label for="registration_number">Registration Number:</label><br>
+                <input type="text" id="registration_number" name="registration_number" autocomplete="off" placeholder="Registration number" required><br><br>
+            </div>
+            <div class="btn"><button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact details search page</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="Search">
+    <header>
+        <a href="/" class="logo">WEBSITE</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/search">Search</a>
+            <a href="/contact">Contact details</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+        <div class="menu_icon">
+          <img src="menu.svg">
+       
+    
+        <div class="dropdown_menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/contact">Contact details</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        </div>
+      </header>
+      <section class="search">
+        <h2>Search for contact details</h2>
+        <form action="/search" method="post">
+        <div class="search-box">
+            <input type="text" id="registrationNumber" name="registrationNumber" placeholder="Registration number"><br><br>
+        </div>
+        <button class="btn2" type="submit">Search</button>
+    </form>
+    </section>
+    <script src="action.js"></script>
+</body>
+</html>
